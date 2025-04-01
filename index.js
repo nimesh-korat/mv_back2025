@@ -8,7 +8,6 @@ const {
 } = require("./apis/admin/Form/getAdmissioninquiry");
 const { GetContactUs } = require("./apis/admin/Form/getContactUs");
 const { AddContactUs } = require("./apis/user/addContactsUs");
-const { AddNews } = require("./apis/admin/News/AddNews");
 const {
   newsPicUpload,
   staffPicUpload,
@@ -45,6 +44,7 @@ const Logout = require("./apis/admin/logout");
 const Session = require("./apis/admin/session");
 const { UpdateCredentials } = require("./apis/admin/updateCredentials");
 const { GetCounts } = require("./apis/admin/getCounts");
+const { AddNews } = require("./apis/admin/News/AddNews");
 require("dotenv").config();
 
 //initialize app
