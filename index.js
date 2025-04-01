@@ -44,7 +44,7 @@ const Logout = require("./apis/admin/logout");
 const Session = require("./apis/admin/session");
 const { UpdateCredentials } = require("./apis/admin/updateCredentials");
 const { GetCounts } = require("./apis/admin/getCounts");
-const { AddNews } = require("./apis/admin/News/AddNews");
+// const { AddNews } = require("./apis/admin/News/AddNews");
 require("dotenv").config();
 
 //initialize app
@@ -100,8 +100,8 @@ app.get("/getAdmissioninquiry", GetAdmissionInquiry);
 app.get("/getContactUs", GetContactUs);
 
 //? News
-app.post("/addNews", newsPicUpload.single("newsPic"), AddNews);
-app.post("/deleteNews", DeleteNews);
+// app.post("/addNews", newsPicUpload.single("newsPic"), AddNews);
+// app.post("/deleteNews", DeleteNews);
 
 //? Staff
 app.post("/addStaff", staffPicUpload.single("staffPic"), AddStaff);
