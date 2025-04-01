@@ -1,4 +1,3 @@
-const { Timestamp } = require("mongodb");
 const connectDB = require("../../../db/dbConnect");
 
 async function AddNews(req, res) {
